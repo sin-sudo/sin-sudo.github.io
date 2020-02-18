@@ -41,10 +41,18 @@ header ul a {
 .wrapper {
   /* background-color: tomato; */
   width: 600px;
+  display: flex;
+  justify-content: center;
   margin-right: auto;
   margin-left: auto;
-  display: flex;
+  
 }
+
+/* .introduction {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+} */
 
 .icon img {
   margin-right: 30px;
