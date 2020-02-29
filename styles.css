@@ -108,6 +108,7 @@ header ul a {
   width: 400px;
   height: 300px;
   width: 40%;
+  border-radius: 30px;
 }
 
 .hobby {
@@ -134,8 +135,13 @@ header ul a {
   flex-direction: row-reverse;
 }
 
+.my-strong {
+  /* position: relative; */
+}
+
 .strong-point {
   display: flex;
+ 
 }
 
 .strong-point p {
@@ -143,11 +149,23 @@ header ul a {
 }
 
 .strong {
-  background-color: rgb(207, 203, 203);
+  /* background-color: rgb(207, 203, 203); */
   border-radius: 10px;
   width: 50%;
   margin: 0 20px;
   text-align: center;
+}
+
+.strong h3 {
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+.strong p {
+  /* border-top: 1px solid black; */
+  /* padding-top: 20px; */
+  display: none;
 }
 
 section {
@@ -164,6 +182,7 @@ section h1 {
 .message-wrapper {
   text-align: center; 
   margin: 80px 0;
+  /* position: relative; */
 }
 
 .message-wrapper h2 {
@@ -190,3 +209,58 @@ section h1 {
 /* .menu-icon {
   display: none;
 } */
+
+.modal {
+  z-index: 10;
+  width: 30%;
+  height: 30%;
+  background-color: rgba(160, 160, 148,0.8);
+  /* margin: 0 auto; */
+  position: fixed;
+  top: 35%;
+  right: 35%;
+  /* left: ; */
+  border-radius: 20px;
+  display: none;
+  text-align: center;
+}
+
+.btn2 {
+  text-align: center;
+  /* margin: 0 auto; */
+  background-color: limegreen;
+  padding: 20px 33px;
+  box-shadow: 0 7px green;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.btn2:active {
+  box-shadow: none;
+  position: relative;
+  top: 7px;
+}
+
+.fa-times {
+  float: right;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.fa-arrow-up {
+  color: gray;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  font-size: 30px;
+  display: inline-block;
+}
+
+#scroll {
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  display: none;
+}
